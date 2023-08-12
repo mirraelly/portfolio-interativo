@@ -1,0 +1,336 @@
+body {
+    background-color: #44296c;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+
+.flor {
+    width: 2em;
+}
+
+.meu-nome {
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+h1,
+h2 {
+    color: #24d807;
+    font-size: 1.4em;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dev-especialidade,
+h3 {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dev-especialidade {
+    color: #29d5e2;
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-nome {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 50px;
+}
+
+.coracao-dark {
+    display: flex;
+    gap: 5rem;
+}
+
+.coracoes-menu {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.coracoes-menu img {
+    width: 1.5em;
+}
+
+.mode-dark {
+    width: 2em;
+    padding-right: 40px;
+    color: white;
+    padding-top: 10px;
+}
+
+.centro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.setas-rosas-verticais {
+    display: flex;
+    flex-direction: wrap;
+}
+
+.menina-gamer {
+    width: 200px;
+    border-radius: 50%;
+    border: red 3px solid;
+}
+
+.material-symbols-outlined {
+    font-size: 12rem !important;
+    color: yellow;
+}
+
+.redes-controle {
+    display: grid;
+
+}
+
+.redes-controle>* {
+    grid-area: 1/1/2/2;
+}
+
+.conteiner-x {
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-x .x2 {
+    color: black;
+    font-size: 15rem;
+    font-family: arial;
+}
+
+.redes-controle .x {
+    font-size: 15rem;
+    font-family: arial;
+    color: #44296c;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociais img {
+    width: 3.8em;
+}
+
+.redes-controle img {
+    background-color: yellow;
+}
+
+.redes-controle-verde img {
+    background-color: lawngreen;
+}
+
+.redes-verticais {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.redes-horizontais {
+    display: flex;
+}
+
+.rede-git {
+    justify-content: baseline;
+}
+
+.botoes-inicial {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: auto;
+    gap: 18px;
+}
+
+.botao-inicial {
+    border-radius: 25px;
+    background-color: #29d5e2;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 15px 2px;
+    justify-content: center;
+    margin: 0 5px;
+    font-weight: 300;
+    width: 25%;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Quem sou */
+
+.quem-sou-1,
+.quem-sou-2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    padding: 30px 100px;
+}
+
+.foto-minha {
+    border-radius: 50%;
+    border: #F01CF3 3px solid;
+    width: 300px;
+}
+
+.balao {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+.conteiner-balao:after {
+    /* display: block; */
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-left: transparent 50px solid;
+    /* border-right: transparent 50px solid; */
+    border-bottom: white 50px solid;
+    left: -50px;
+    bottom: 66px;
+    position: relative;
+
+}
+
+.balao p {
+    padding: 2rem;
+}
+
+.icones-hobbies {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Fale Conosco */
+.pagina-faleconosco {
+    text-align: left;
+    padding: 0 10rem;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+h5 {
+    padding-bottom: 5rem;
+    padding: 0 6.2rem;
+}
+
+.pagina-faleconosco .linha-pergunta {
+    padding-bottom: 0.5rem;
+    padding-left: 6.2rem;
+    padding-right: 6rem;
+}
+
+.fale-conosco-formsimagem {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #FFFFFF;
+    margin: 1rem 15rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.segunda-parte-redes {
+    padding: 0 5rem;
+    align-items: center;
+    display: flex;
+}
+
+.conteiner-formulario {
+    padding: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 9px;
+    color: yellow;
+}
+
+.input-padrao {
+    width: 28rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.4rem;
+    background-color: #D4F7F9;
+}
+
+.botao-container {
+    flex: 1;
+}
+
+form label.obrigatorio::after {
+    content: '*';
+    display: inline-block;
+    color: red;
+    margin-left: 2px;
+}
+
+form .botao {
+    background-color: yellow;
+    border-radius: 25px;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.5rem;
+    justify-content: center;
+    margin: 0 0.5rem;
+}
+
+/* Rodapé */
+
+.menu-controle {
+    position: sticky;
+    z-index: 30;
+}
+
+.rodape,
+.rodape a {
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.rodape a:hover {
+    color: #F01CF3;
+}
