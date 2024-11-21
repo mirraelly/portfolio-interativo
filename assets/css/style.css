@@ -16,7 +16,7 @@ body {
 h1,
 h2 {
     color: #24d807;
-    font-size: 1.4em;
+    font-size: 1.7em;
     line-height: 35px;
     text-align: center;
     margin-bottom: 30px;
@@ -24,7 +24,7 @@ h2 {
 
 .dev-especialidade,
 h3 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
     line-height: 30px;
 }
@@ -180,7 +180,6 @@ header {
 a {
     text-decoration: none;
     color: black;
-
 }
 
 /* Quem sou */
@@ -228,6 +227,23 @@ a {
     gap: 10px;
 }
 
+/* Formação */
+
+.campo-formacao {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+}
+
+.versos {
+    color: #F6450D;
+    font-size: 28px;
+}
+
+.campo-formacao .lados {
+    color: #FFDE59; 
+    font-size: 17px;
+}
 
 /* Fale Conosco */
 .pagina-faleconosco {
