@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,91 +19,100 @@
     <title>Portfólio Interativo</title>
 </head>
 
-<body>
-    <header>
-        <figure class="logo-nome">
-            <img class="flor" src="./assets/imagens/icon-rosa.png" alt="Rosa de pétalas rosas e cabo verde">
-            <figcaption class="meu-nome">Mirraely</figcaption>
+<body class="bg-purple-900">
+    <header class="flex justify-between px-8 py-3 min-w-96 sticky top-0 bottom-0 left-0 right-0 ">
+        <figure class="logo-nome flex flex-wrap items-center gap-2">
+            <img class="w-6" src="./assets/imagens/icon-rosa.png" alt="Rosa de pétalas rosas e cabo verde">
+            <figcaption class="text-white text-xs">Mirraely</figcaption>
         </figure>
-        <section class="coracao-dark">
-            <figure class="coracoes-menu">
+        <section class="flex gap-2">
+            <figure class="flex text-2xl align-center">
                 <!-- <span class="material-symbols-outlined">favorite</span> -->
-                <img src="./assets/imagens/icon-coracao.png" alt="Coração">
-                <img src="./assets/imagens/icon-coracao.png" alt="Coração">
-                <img src="./assets/imagens/icon-coracao.png" alt="Coração">
-                <img src="./assets/imagens/icon-coracao.png" alt="Coração">
-                <img src="./assets/imagens/icon-coracao.png" alt="Coração">
+                <img src="./assets/imagens/icon-coracao.png" class="w-6 h-8" alt="Coração">
+                <img src="./assets/imagens/icon-coracao.png" class="w-6 h-8" alt="Coração">
+                <img src="./assets/imagens/icon-coracao.png" class="w-6 h-8" alt="Coração">
+                <img src="./assets/imagens/icon-coracao.png" class="w-6 h-8" alt="Coração">
+                <img src="./assets/imagens/icon-coracao.png" class="w-6 h-8" alt="Coração">
             </figure>
-            <figure>
-                <img class="mode-dark" src="./assets/imagens/dark-mode.png" alt="Alterar tema de cores">
+            <figure class="">
+                <img class="w-10 ps-3.5 text-white" src="./assets/imagens/dark-mode.png" alt="Alterar tema de cores">
             </figure>
         </section>
     </header>
-    <main>
+    <main class="z-10 relative flex flex-col">
         <article>
             <section>
-                <h1>Olá, <br>
+                <h1 class="text-3xl text-center mb-7 text-lime-500">OLÁ, <br>
                     sou Mirraely</h1>
-                <h3>Desenvolvedora</h3>
-                <div class="dev-especialidade">
+                <h3 class="text-center text-white text-xl">Desenvolvedora</h3>
+                <div class=" text-cyan-300 text-center text-xl">
                     Font-End
                 </div>
             </section>
-            <section class="centro">
-                <section class="redes-sociais">
-                    <figure class="rede-esquerda">
-                        <img src="./assets/imagens/seta-rosa-esquerda.png" alt="seta rosa">
+            <section class=" flex justify-evenly items-center">
+                <section class="container-setas-rosas flex align-center z-30 relative ">
+                    <figure class="flex flex-wrap gap-10 z-40 relative setas-horizontais">
+                        <img src="./assets/imagens/setas/left.svg" class="h-16" alt="seta rosa">
+                         <img src="./assets/imagens/setas/right.svg" class="h-16" alt="seta rosa">
                     </figure>
-                    <figure class="setas-rosas-vericais redes-verticais">
-                        <img id="cima" src="./assets/imagens/seta-rosa-cima.png" alt="seta rosa">
-                        <img id="baixo" src="./assets/imagens/seta-rosa-baixo.png" alt="seta rosa">
-                    </figure>
-                    <figure class="setas-rosas-horizontais redes-horizontais">
-                        <img src="./assets/imagens/seta-rosa-direita.png" alt="seta rosa">
+                    <figure class="flex flex-col gap-10 z-50 relative setas-verticais">
+                        <img id="cima" src="./assets/imagens/setas/top.svg" class="w-16" alt="seta rosa">
+                        <img id="baixo" src="./assets/imagens/setas/bottom.svg" class="w-16" alt="seta rosa">
                     </figure>
                 </section>
                 <section class="foto">
                     <img class="menina-gamer" src="./assets/imagens/gamer-girl.jpg" alt="Foto de menina gamer">
                     <!-- Image by <a href="https://www.freepik.com/free-vector/futuristic-background-computer-gamer_4948611.htm#page=6&query=video%20game&position=40&from_view=search&track=ais">Freepik</a> -->
                 </section>
-                <section class="redes-controle">
 
-                    <figure class="redes-sociais">
-                        <div class="rede-esquerda">
+                <section class="">
+                    <section class="container-redes-sociais flex align-center z-30 relative">
+                        <figure class="flex flex-wrap gap-10 z-40 relative redes-horizontais">
                             <a href="https://www.linkedin.com/in/mirraely/" target="_blank">
-                                <img src="./assets/imagens/redes-linkedin.png" alt="Logo LinkedIn"></a>
-                        </div>
-                        <div class="redes-verticais ">
+                                <img src="./assets/imagens/redes-linkedin.png" class="h-16" alt="Logo LinkedIn">
+                            </a>
                             <a href="https://github.com/mirraelly" target="_blank">
-                                <img class="rede-git" src="./assets/imagens/redes-pb-github.png" alt="Logo GitHub"></a>
+                                <img src="./assets/imagens/redes-pb-github.svg" class="h-16"  alt="Logo GitHub">
+                            </a>
+                        </figure>
+                        <figure class="flex flex-col gap-10 z-50 relative redes-verticais">
                             <a href="https://www.instagram.com/mirraely__/" target="_blank">
-                                <img src="./assets/imagens/redes-instagram.png" alt="Logo Instagram"></a>
-                        </div>
-                        <div class="redes-horizontais">
+                                <img src="./assets/imagens/redes-instagram.png" class="w-16" alt="Logo Instagram">
+                            </a>
                             <a href="#" target="_blank">
-                                <img src="./assets/imagens/redes-curriculo.png" alt="Logo Currículo"></a>
-                        </div>
-                    </figure>
+                                <img src="./assets/imagens/user-curriculum.svg" class="w-14" alt="Logo Currículo">
+                            </a>
+                        </figure>
+                        
+                    </section>
 
-                    <figure class="conteiner-x">
-                        <span class="x">&times;</span>
-                    </figure>
+                    <section class="container-setas-rosas flex align-center z-10 relative ">
+                            <figure class="flex flex-wrap gap-4 z-20 relative flags-horizontais top-0 left-0">
+                                <img src="./assets/imagens/flags/left.svg" class="h-16" alt="seta rosa">
+                                <img src="./assets/imagens/flags/right.svg" class="h-16" alt="seta rosa">
+                            </figure>
+                            <figure class="flex flex-col gap-4 z-30 relative right-32 flags-verticais">
+                                <img id="cima" src="./assets/imagens/flags/top.svg" class="w-16" alt="seta rosa">
+                                <img id="baixo" src="./assets/imagens/flags/bottom.svg" class="w-16" alt="seta rosa">
+                            </figure>
+                    </section>
+                  
                 </section>
             </section>
             <section>
                 <nav>
                     <ul class="botoes-inicial">
-                        <li class="botao-inicial"><a href="#"> Quem sou?</a></li>
-                        <li class="botao-inicial"><a href="#">Projetos</a></li>
-                        <li class="botao-inicial"><a href="#">Fale Comigo</a></li>
-                        <li class="botao-inicial"><a href="#">Formação</a></li>
-                        <li class="botao-inicial"><a href="#">Skills</a></li>
+                        <li class="botao-inicial bg-cyan-300"><a href="#"> Quem sou?</a></li>
+                        <li class="botao-inicial bg-cyan-300"><a href="#">Projetos</a></li>
+                        <li class="botao-inicial bg-cyan-300"><a href="#">Fale Comigo</a></li>
+                        <li class="botao-inicial bg-cyan-300"><a href="#">Formação</a></li>
+                        <li class="botao-inicial bg-cyan-300"><a href="#">Skills</a></li>
                     </ul>
                 </nav>
             </section>
         </article>
         <article>
-            <h2>Quem sou?</h2>
+            <h2 class="text-3xl text-center mb-7 text-lime-500">Quem sou?</h2>
             <section class="quem-sou-1">
                 <figure>
                     <img class="foto-minha" src="./assets/imagens/minha-foto.jpeg" alt="Foto de Mirraely">
@@ -128,8 +138,8 @@
                 <img src="./assets/imagens/menu-controle.png" alt="Menu da página">
             </aside>
             <section>
-                <h2>Quem sou?</h2>
-                <h3>Meus Hobbies</h3>
+                <h2 class="text-3xl text-center mb-7 text-lime-500">Quem sou?</h2>
+                <h3 class="text-center text-white text-xl">Meus Hobbies</h3>
                 <section class="quem-sou-2">
                     <figure>
                         <img class="foto-minha" src="./assets/imagens/minha-foto.jpeg" alt="Foto de Mirraely">
@@ -155,7 +165,7 @@
                 </section>
         </article>
         <article>
-            <h2>Projetos</h2>
+            <h2 class="text-3xl text-center mb-7 text-lime-500">Projetos</h2>
             <section>
                 <figure>
                     <img src="" alt="Imagem projeto 1">
@@ -184,7 +194,7 @@
             </section>
         </article>
         <article>
-            <h2>Skills</h2>
+            <h2 class="text-3xl text-center mb-7 text-lime-500">Skills</h2>
             <section>
                 <figure>
                     <img src="" alt="Imagem projeto 1">
@@ -214,21 +224,21 @@
             </section>
         </article>
         <article>
-            <h2>Formação</h2>
+            <h2 class="text-3xl text-center mb-7 text-lime-500">Formação</h2>
             <section class="campo-formacao">
                 <section>
-                    <h3 class="lados">Tech</h3>
+                    <h3 class="lados text-white text-center text-xl">Tech</h3>
                 </section>
                 <section>
-                    <h3 class="versos">VS</h3>
+                    <h3 class="versos text-white text-center text-xl">VS</h3>
                 </section>
                 <section>
-                    <h3  class="lados">Outras</h3>
+                    <h3  class="lados text-white text-center text-xl">Outras</h3>
                 </section>
             </section>
         </article>
         <article>
-            <h2>Fale Comigo</h2>
+            <h2 class="text-3xl text-center mb-7 text-lime-500">Fale Comigo</h2>
             <section class="pagina-faleconosco">
                 <h5 class="linha-pergunta">Quer entrar em contato comigo?</h5>
 
@@ -305,13 +315,95 @@
                 </section>
             </section>
         </article>
+
+        
     </main>
-    <footer>
+    <footer class="relative flex justify-center">
         <spam class="rodape">
             <p>© Copyright <a href="https://github.com/mirraelly" target="_blank">Mirraely Moura</a></p>
             <p>2023 - Todos os Direitos Reservados</p>
         </spam>
     </footer>
+    <div class="container-imagens-background flex justify-between z-0 fixed top-0 bottom-0 right-0 left-0">
+        <div class="container-imagens-background-lado-esquerdo">
+           <div class="linhas-background-lado-esquerdo flex flex-col gap-1">
+                <div class="flex flex-col">
+                    <div class="linhas-background linha-maior-esquerda"></div>
+                    <div class="flex justify-between flex-col">
+                        <div class="linhas-background linha-media-esquerda"></div>
+                        <div class="linhas-background linha-menor-esquerda"></div>
+                        <div class="linhas-background linha-media-esquerda-baixo"></div>
+                    </div>
+                </div>
+                <div class="linhas-background-esquerdas-baixo flex flex-col gap-1">
+                    <div class="flex flex-col justify-between">
+                        <div class="linhas-background linha-pequena-baixa-primeira"></div>
+                        <div class="linhas-background linha-pequena-baixa-segunda"></div>
+                    </div>
+                    <div class="linhas-background linha-media-esquerda-baixa"></div>
+                </div>
+           </div>
+           <div class="imagens-background-lado-esquerdo">
+              <div>
+                 <img src="./assets/imagens/background/star-white.svg" alt="Estrela branca">
+              </div>
+              <div>
+                 <img src="./assets/imagens//background/circle-blue.svg" alt="Círculo azul">
+              </div>
+              <div>
+                  <img src="./assets/imagens/background/square-yellow.svg" alt="Quadrado amarelo">
+              </div>
+              <div>
+                <img src="./assets/imagens/background/star-pink.svg" alt="Estrela rosa">
+               </div>
+               <div>
+                 <img src="./assets/imagens/background/circle-yellow.svg" alt="Círculo amarelo">
+               </div>
+            </div>
+        </div>
+        <div class="container-imagens-background-lado-direito">
+            <div class=" flex flex-col gap-1">
+                <div class="flex flex-col linhas-background-lado-direito-cima">
+                    <div class="linhas-background linha-media-direita-alta"></div>
+                    <div class="flex flex-col">
+                        <div class="linhas-background linha-pequena-alta-primeira"></div>
+                        <div class="linhas-background linha-pequena-alta-segunda"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col linhas-background-lado-direito-baixo">
+                    <div class="flex flex-col gap-2">
+                        <div class="linhas-background linha-menor-direita"></div>
+                        <div class="linhas-background linha-menor-direita-baixo"></div>
+                    </div>
+                    <div class="linhas-background linha-maior-direita"></div>
+                </div>
+            </div>
+            <div class="imagens-background-lado-direito">
+                <div>
+                    <img src="./assets/imagens/background/raio.svg" alt="Raio">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/star-white.svg" alt="Estrela branca">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/circle-yellow.svg" alt="Círculo branco">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/star-yellow.svg" alt="Estrela amarela">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/raio.svg" alt="Raio">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/circle-pink.svg" alt="Círculo rosa">
+                </div>
+                <div>
+                    <img src="./assets/imagens/background/square-blue.svg" alt="Quadrado azul">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
