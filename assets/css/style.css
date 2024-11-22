@@ -125,6 +125,52 @@ body {
     margin-top: 110px;
 }
 
+.imagens-background-lado-esquerdo .container-star-white {
+    margin-top: -32rem;
+    margin-inline-start: 9rem;
+}
+
+.imagens-background-lado-esquerdo .container-circle-blue-img {
+    margin-top: 3.5rem;
+    margin-left: 5.5rem;
+}
+
+.imagens-background-lado-esquerdo .container-quadrado-amarelo {
+    margin-top: 11rem;
+    margin-left: 4.3rem;
+}
+
+.imagens-background-lado-esquerdo .container-star-pink {
+    margin-top: 1.8rem;
+    margin-left: 7rem;
+}
+
+.imagens-background-lado-esquerdo .container-circle-yellow {
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+
+.imagens-background-lado-direito .container-raio-superior {
+
+}
+.imagens-background-lado-direito .container-star-white {
+    
+}
+.imagens-background-lado-direito .container-circle-white {
+    
+}
+.imagens-background-lado-direito .container-star-yellow {
+    
+}
+.imagens-background-lado-direito .container-raio-inferior {
+    
+}
+.imagens-background-lado-direito .container-circle-pink {
+    
+}
+.imagens-background-lado-direito .container-quadrado-azul{
+    
+}
 
 /* Adaptado para Tawilnd até aqui*/
 
