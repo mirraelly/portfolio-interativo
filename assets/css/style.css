@@ -3,6 +3,7 @@ body {
   text-transform: uppercase;
 }
 
+
 .setas-horizontais {
   top: 3.8rem;
   left: 0.4rem;
@@ -16,13 +17,21 @@ body {
     bottom: 4rem;
 }
 
-.redes-horizontais {
-  top: 4rem;
-  left: 0.2rem;
+.container-redes-sociais .redes-horizontais {
+  top: 11.2rem;
+  left: 0.4rem;
+  column-gap: 3rem;
 }
 
-.redes-verticais {
-  right: 7.4rem;
+.container-redes-sociais .redes-verticais {
+  right: 7.1rem;
+  row-gap: 3.5rem;
+  top: 7.8rem;
+  margin: 0 auto;
+}
+
+.icon-instagram {
+  padding-right: 6px;
 }
 
 /* background */
@@ -65,7 +74,7 @@ body {
 .linhas-background-lado-direito-baixo .linha-maior-direita {
     width: 0.35rem;
     height: 12rem;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     margin-top: -150px;
 }
 
@@ -93,14 +102,14 @@ body {
 .linhas-background-lado-direito-cima .linha-pequena-alta-primeira {
     width: 0.35rem;
     height: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     margin-top: -140px;
 }
 
 .linhas-background-lado-direito-cima .linha-pequena-alta-segunda {
     width: 0.35rem;
     height: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
     margin-top: 7px;
 }
 
@@ -121,7 +130,7 @@ body {
 .linhas-background-lado-direito-cima .linha-media-direita-alta {
     width: 0.35rem;
     height: 7rem;
-    margin-left: 1.5rem;
+    margin-left: 0rem;
     margin-top: 110px;
 }
 
@@ -188,6 +197,7 @@ body {
   width: 200px;
   border-radius: 50%;
   border: red 3px solid;
+  clip-path: circle(40%);
 }
 
 .material-symbols-outlined {
@@ -282,7 +292,11 @@ a {
 
 /* Quem sou */
 
-.quem-sou-1,
+.quem-sou-1,.quem-sou-2, .projetos-section, .skills-section, .campo-formacao  {
+  height: 30rem;
+}
+
+
 .quem-sou-2 {
   display: flex;
   justify-content: space-evenly;
@@ -290,10 +304,13 @@ a {
   padding: 30px 100px;
 }
 
+.container-my-photo {
+  width: 68rem;
+}
+
 .foto-minha {
   border-radius: 50%;
-  border: #f01cf3 3px solid;
-  width: 300px;
+  border: #f01cf3 9px solid;
 }
 
 .balao {
@@ -307,16 +324,18 @@ a {
   content: " ";
   width: 0;
   height: 0;
-  border-left: transparent 50px solid;
-  /* border-right: transparent 50px solid; */
-  border-bottom: white 50px solid;
-  left: -50px;
-  bottom: 66px;
+  /* border-left: transparent 50px solid; */
+  border-right: transparent 77px solid;
+  border-top: white 86px solid;
+  left: 0px;
+  bottom: -44px;
   position: relative;
+  /* transform: rotate(90deg); */
 }
 
 .balao p {
   padding: 2rem;
+  font-size: 0.5rem;
 }
 
 .icones-hobbies {
